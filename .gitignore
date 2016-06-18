@@ -6,3 +6,6 @@ npm-debug.log
 npm-debug.log.*
 thumbs.db
 !.gitkeep
+docs
+book.json
+SUMMARY.md
