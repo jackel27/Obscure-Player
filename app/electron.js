@@ -21,12 +21,17 @@ function createWindow () {
    * Initial window options
    */
   mainWindow = new BrowserWindow({
-    height: 600,
-    width: 800
+    height: 200,
+    width: 600,
+    frame: true,
+    x: 0,
+    y: 0
   })
+  mainWindow.setResizable(true)
+console.log(electron.screen.getPrimaryDisplay().workAreaSize)
 
   mainWindow.loadURL(config.url)
-  if (process.env.NODE_ENV === 'development') mainWindow.webContents.openDevTools()
+  // if (process.env.NODE_ENV === 'development') mainWindow.webContents.openDevTools()
 
   mainWindow.on('closed', () => {
     mainWindow = null
