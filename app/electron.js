@@ -23,9 +23,11 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     height: 200,
     width: 600,
-    frame: true,
     x: 0,
-    y: 0
+    y: 0,
+    frame: false,
+    alwaysOnTop: true,
+    transparent: true
   })
   mainWindow.setResizable(true)
 console.log(electron.screen.getPrimaryDisplay().workAreaSize)
