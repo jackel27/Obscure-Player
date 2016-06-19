@@ -1,6 +1,6 @@
 export default {
   '/': {
-    component: require('./components/LandingPageView'),
+    component: require('./App.vue'),
     name: 'landing-page'
   }
 }

@@ -6,6 +6,9 @@ import Router from 'vue-router'
 import App from './App'
 import routes from './routes'
 
+import 'bulma/css/bulma.min.css'
+import 'font-awesome/css/font-awesome.min.css'
+
 Vue.use(Electron)
 Vue.use(Resource)
 Vue.use(Router)

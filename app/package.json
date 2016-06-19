@@ -4,7 +4,10 @@
   "description": "",
   "main": "electron.js",
   "dependencies": {
+    "bulma": "0.0.28",
     "electron-drag": "^1.2.0",
+    "font-awesome": "^4.6.3",
+    "musicmetadata": "^2.0.4",
     "vue": "^1.0.24",
     "vue-electron": "^1.0.0",
     "vue-resource": "^0.7.0",

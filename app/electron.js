@@ -4,6 +4,8 @@ const electron = require('electron')
 const path = require('path')
 const app = electron.app
 const BrowserWindow = electron.BrowserWindow
+// const {dialog} = require('electron');
+
 
 let mainWindow
 let config = {}
@@ -21,19 +23,23 @@ function createWindow () {
    * Initial window options
    */
   mainWindow = new BrowserWindow({
-    height: 200,
+    // height 100
+    height: 150,
     width: 600,
     x: 0,
     y: 0,
     frame: false,
     alwaysOnTop: true,
-    transparent: true
+    transparent: true,
+    webPreferences: {
+      webSecurity: false
+    }
   })
   mainWindow.setResizable(true)
 console.log(electron.screen.getPrimaryDisplay().workAreaSize)
 
   mainWindow.loadURL(config.url)
-  // if (process.env.NODE_ENV === 'development') mainWindow.webContents.openDevTools()
+  if (process.env.NODE_ENV === 'development') mainWindow.webContents.openDevTools()
 
   mainWindow.on('closed', () => {
     mainWindow = null
