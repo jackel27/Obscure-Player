@@ -43,7 +43,7 @@
     store,
     data () {
       return {
-        isplaying: ''
+        isplaying: false
       }
     },
     methods: {

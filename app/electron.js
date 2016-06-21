@@ -6,7 +6,6 @@ const app = electron.app
 const BrowserWindow = electron.BrowserWindow
 // const {dialog} = require('electron');
 
-
 let mainWindow
 let config = {}
 
@@ -36,7 +35,6 @@ function createWindow () {
     }
   })
   mainWindow.setResizable(true)
-console.log(electron.screen.getPrimaryDisplay().workAreaSize)
 
   mainWindow.loadURL(config.url)
   if (process.env.NODE_ENV === 'development') mainWindow.webContents.openDevTools()

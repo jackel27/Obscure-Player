@@ -1,0 +1,4 @@
+export const ADD_TO_LIBRARY = 'ADD_TO_LIBRARY'
+// const CREATE_PLAYLIST = 'CREATE_PLAYLIST'
+// const DEL_PLAYLIST = 'DEL_PLAYLIST'
+// const delVideoId = 'DEL_ID_FROM_PLAYLIST'

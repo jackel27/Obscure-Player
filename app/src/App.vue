@@ -89,6 +89,7 @@
 </template>
 
 <script>
+  import {library} from './vuex/getters'
   import store from 'src/vuex/store'
   import Controls from 'components/Player/Controls'
   import TimerAndMenu from 'components/Player/TimerAndMenu'
@@ -104,6 +105,11 @@
       ArtistAndTitle,
       Collapse,
       ProgressBar
+    },
+    vuex: {
+      getters: {
+        library
+      }
     }
   }
 

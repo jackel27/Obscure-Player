@@ -14,10 +14,9 @@
     display: inline-block;
     bottom: 0;
   }
-  
+
   .progress-bar-overlay {
     margin-top: -15px;
-    width: 50%;
     position: fixed;
     height: 10px;
     background-color: rgba(255, 255, 255, .75);

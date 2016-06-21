@@ -1,3 +1,3 @@
-export function counters (state) {
-  return state.counters.all
+export function library (state) {
+  return state.library.main
 }

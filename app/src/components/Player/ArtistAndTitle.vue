@@ -84,6 +84,13 @@
   import store from 'src/vuex/store'
 
   export default {
-    store
+    store,
+    data () {
+      return {
+        thumbnail: ''
+      }
+    },
+    methods: {
+    }
   }
 </script>
