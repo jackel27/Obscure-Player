@@ -23,7 +23,7 @@
 <template>
   <div class="search">
     <p class="control">
-      <input class="input" type="text" placeholder="Search">
+      <input class="input" v-model="searchquery"type="text" placeholder="Search">
     </p>
   </div>
 
@@ -47,7 +47,7 @@
       </tfoot>
       <tbody>
         <!-- TODO change td id back to $index after testing -->
-        <tr v-for="list in library" id="{{ library.indexOf(list) }}">
+        <tr v-for="list in library  | filterBy searchquery" id="{{ library.indexOf(list) }}">
           <td>
             {{ library.indexOf(list) }}
           </td>
@@ -81,6 +81,7 @@
     },
     data () {
       return {
+        searchquery: ''
       }
     },
     methods: {
