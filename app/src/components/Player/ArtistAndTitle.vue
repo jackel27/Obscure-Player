@@ -14,12 +14,12 @@
       text-overflow: ellipsis;
   }
   .title {
-    height: 20px;
+    height: 25px;
     text-align: center;
     margin-bottom: 0px!important;
   }
   .title, .artist {
-    overflow: hidden;
+    overflow-x: hidden;
     box-sizing: border-box;
     vertical-align: middle;
     padding-left: 15px;
@@ -68,13 +68,13 @@
 
   <div class="title">
     <div class="title-container">
-      <h3>Good Morning</h3>
+      <h3>{{ title }}</h3>
     </div>
   </div>
 
   <div class="artist">
     <div class="artist-container">
-      <h4>By: The Nice Alarm Clark Guys</h4>
+      <h4>{{ artist }}</h4>
     </div>
   </div>
 
@@ -82,12 +82,12 @@
 
 <script>
   import store from 'src/vuex/store'
-
   export default {
     store,
     data () {
       return {
-        thumbnail: ''
+        title: '',
+        artist: ''
       }
     },
     methods: {

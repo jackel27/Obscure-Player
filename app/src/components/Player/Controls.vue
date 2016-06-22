@@ -28,10 +28,10 @@
         <i class="fa fa-fast-backward"></i>
       </span>
       <span class="icons icon is-medium">
-        <i class="fa" v-bind:class="{ 'fa-play': isplaying, 'fa-pause': !isplaying }" @click='playpause'></i>
+        <i class="fa" v-bind:class="{ 'fa-play': !isplaying, 'fa-pause': isplaying }" @click='playpause'></i>
       </span>
       <span class="icons icon is-medium">
-        <i class="fa fa-fast-forward" @click='cutvolume'></i>
+        <i class="fa fa-fast-forward" @click='forward'></i>
       </span>
     </div>
 
@@ -39,25 +39,43 @@
 
 <script>
   import store from 'src/vuex/store'
+  import {library} from '../../vuex/getters'
   export default {
     store,
+    vuex: {
+      getters: {
+        library
+      }
+    },
     data () {
       return {
-        isplaying: false
+        isplaying: false,
+        artwork: ''
       }
+    },
+    ready () {
+      document.getElementById('domaudio').addEventListener('playing', () => {
+        console.log('playing started')
+        this.isplaying = true
+      })
+      document.getElementById('domaudio').addEventListener('pause', () => {
+        console.log('playing started')
+        this.isplaying = false
+      })
     },
     methods: {
       playpause () {
         let player = document.getElementById('domaudio')
-        this.isplaying = !player.paused
         if (this.isplaying) {
           player.pause()
         } else {
           player.play()
         }
+        this.isplaying = !player.paused
       },
-      cutvolume () {
-        document.getElementById('domaudio').volume = 0.5
+      forward () {
+        let player = document.getElementById('domaudio')
+        // document.getElementById('domaudio').volume = 0.5
       }
     }
   }

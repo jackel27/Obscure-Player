@@ -4,6 +4,7 @@
   "description": "",
   "main": "electron.js",
   "dependencies": {
+    "base64-arraybuffer": "^0.1.5",
     "bulma": "0.0.28",
     "electron-drag": "^1.2.0",
     "font-awesome": "^4.6.3",
