@@ -3,11 +3,11 @@
 ## Install
 
 `git clone https://github.com/jackel27/Obscure-Player.git`
-<br>
-`cd obscure-player`
-<br>
+
+`cd Obscure-Player`
+
 `npm install`
-<br>
+
 `npm run dev`
 
 
@@ -15,7 +15,9 @@
 Used Electron-Vue. Features a sweet webpacked bundle including vuejs, vuex, router, and most importantly, Electron. Below my content you will find the attached readme for the Electron-Vue Boilerplate.
 
 ## Overview
-The direction of this was to mess around with electron-vue and learn. This will be my first electron project. I started programming brand-spanking-new back in mid February. I am a four-month greenhorn and needed something to do. So far, this has taken me about 3-4 days. Still much to fix, style, etc. You will find more info in the TODO section. **Don't forget to check out and star Electron-Vue [here](https://github.com/SimulatedGREG/electron-vue).**
+The direction of this was to mess around with electron-vue and learn. This will be my first electron project. I started programming brand-spanking-new back in mid February. I am a four-month greenhorn and needed something to do. So far, this has taken me about 3-4 days. Still much to fix, style, etc. You will find more info in the TODO section.
+
+**Don't forget to check out and star Electron-Vue [here](https://github.com/SimulatedGREG/electron-vue).**
 
 ## TODOs
 <li>Choose folder to open all songs within folder and subfolders</li>
