@@ -193,9 +193,9 @@
     },
     data () {
       return {
-        artwork: '',
-        title: '',
-        artist: '',
+        artwork: 'http://i.imgur.com/Ng15KqK.jpg',
+        title: 'Welcome',
+        artist: 'pick a song to get started',
         loadedIndex: ''
       }
     },
