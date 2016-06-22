@@ -1,5 +1,5 @@
 {
-  "name": "electron-vue",
+  "name": "obscure-player",
   "version": "0.1.0",
   "description": "An Electron & Vue.js quick starter",
   "scripts": {
@@ -16,7 +16,7 @@
     "vue:route": "node tasks/vue/route.js",
     "vuex:module": "node tasks/vuex/module.js"
   },
-  "author": "Greg Holguin <simulatedgreg@gmail.com>",
+  "author": "David Kaiser <it.davidkaiser@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.8.0",

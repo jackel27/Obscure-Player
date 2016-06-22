@@ -7,7 +7,7 @@ const platform = process.env.PLATFORM_TARGET || 'all'
 let config = {
   // Name of electron app
   // Will be used in production builds
-  name: 'app',
+  name: 'Obscure Player',
 
   // Enable electron's devtron devtools extension in development
   devtron: true,

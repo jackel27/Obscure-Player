@@ -1,5 +1,15 @@
 # Obscure-Player
 ![](http://i.imgur.com/uTISfDP.png)
+## Install
+
+`git clone https://github.com/jackel27/Obscure-Player.git`
+<br>
+`cd obscure-player`
+<br>
+`npm install`
+<br>
+`npm run dev`
+
 
 ## Made with a good friend's boilerplate...
 Used Electron-Vue. Features a sweet webpacked bundle including vuejs, vuex, router, and most importantly, Electron. Below my content you will find the attached readme for the Electron-Vue Boilerplate.
