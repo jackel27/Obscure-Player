@@ -74,7 +74,7 @@
         this.isplaying = !player.paused
       },
       forward () {
-        let player = document.getElementById('domaudio')
+        // let player = document.getElementById('domaudio')
         // document.getElementById('domaudio').volume = 0.5
       }
     }

@@ -54,7 +54,7 @@
           <td @click="loadandplay(list)">{{ list.title }}</td>
           <td @click="loadandplay(list)">{{ list.album }}</td>
           <td>
-            <button class="button is-danger" name="button">
+            <button class="button is-danger" name="button" @click="delete(library.indexOf(list))">
               <i class="fa fa-trash"></i>
             </button>
           </td>
@@ -68,11 +68,15 @@
 <script>
   import store from 'src/vuex/store'
   import {library} from '../../vuex/getters'
+  import {delFromLibrary} from '../../vuex/actions'
   export default {
     store,
     vuex: {
       getters: {
         library
+      },
+      actions: {
+        delFromLibrary
       }
     },
     data () {
@@ -80,6 +84,9 @@
       }
     },
     methods: {
+      delete (item) {
+        this.delFromLibrary(item)
+      },
       loadandplay (list) {
         document.getElementById('domaudio').pause()
         document.getElementById('domaudio').src = list.location

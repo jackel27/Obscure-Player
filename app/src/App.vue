@@ -25,12 +25,20 @@
   }
 
   .body-background {
-    background-size: cover;
+    // background-size: cover;
+    // width: 100%;
+    // height: 100px;
+    // position: fixed;
+    // z-index: -4;
+    // filter: blur(45px) brightness(.9);
     width: 100%;
-    height: 100px;
+    height: 100%;
     position: fixed;
     z-index: -4;
-    filter: blur(45px) brightness(.4);
+    -webkit-filter: blur(35px) brightness(0.9);
+    filter: blur(45px) brightness(0.9);
+    background-size: 100%;
+    background-position-y: 180%;
   }
 
   .collapse-container {

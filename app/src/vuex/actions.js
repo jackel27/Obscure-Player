@@ -2,6 +2,9 @@ import * as types from './mutation-types'
 export const addToLibrary = ({dispatch}, id) => {
   dispatch(types.ADD_TO_LIBRARY, id)
 }
+export const delFromLibrary = ({dispatch}, id) => {
+  dispatch(types.DEL_FROM_LIBRARY, id)
+}
 // export const delVideoId = ({dispatch}, id) => {
 //   dispatch(types.DEL_VIDEO_ID, id)
 // }
