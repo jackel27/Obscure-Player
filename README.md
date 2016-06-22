@@ -1,3 +1,26 @@
+# Obscure-Player
+## Made with a good friend's boilerplate...
+Used Electron-Vue. Features a sweet webpacked bundle including vuejs, vuex, router, and most importantly, Electron. Below my content you will find the attached readme for the Electron-Vue Boilerplate.
+
+## Overview
+The direction of this was to mess around with electron-vue and learn. This will be my first electron project. I started programming brand-spanking-new back in mid February. I am a four-month greenhorn and needed something to do. So far, this has taken me about 3-4 days. Still much to fix, style, etc. You will find more info in the TODO section. **Don't forget to check out and star Electron-Vue [here](https://github.com/SimulatedGREG/electron-vue).**
+
+## TODOs
+<li>Choose folder to open all songs within folder and subfolders</li>
+<li>Style Library</li>
+<li>Write Next and Previous buttons based off of v-for filter or what is currently next in library</li>
+<li><strike>Increase song load times</strike></li>
+<li>Add Volume Controls</li>
+<li><strike>Placeholders and logic for songs that do not contain meta-data</strike></li>
+<li><strike>Add dropdown Library</strike></li>
+<li>add a sweet live music graph</li>
+<li><strike>Fix text-overflow on title</strike></li>
+<li>make text-overflow auto scroll</li>
+<li>Add highlight style on ```<tr>``` of current song playing </li>
+<li> and more... </li>
+
+---
+
 [![](docs/logo.png)](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html)
 
 > The boilerplate for making electron apps built with vue (pretty much what it sounds like).
