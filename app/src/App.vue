@@ -194,8 +194,8 @@
     data () {
       return {
         artwork: 'http://i.imgur.com/Ng15KqK.jpg',
-        title: 'Welcome',
-        artist: 'pick a song to get started',
+        title: 'Welcome to Obscure-Player',
+        artist: 'An Electron-Vue Project',
         loadedIndex: ''
       }
     },

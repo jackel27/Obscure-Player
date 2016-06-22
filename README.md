@@ -1,4 +1,6 @@
 # Obscure-Player
+![](http://i.imgur.com/uTISfDP.png)
+
 ## Made with a good friend's boilerplate...
 Used Electron-Vue. Features a sweet webpacked bundle including vuejs, vuex, router, and most importantly, Electron. Below my content you will find the attached readme for the Electron-Vue Boilerplate.
 
