@@ -28,7 +28,7 @@
   .timerd {
     color: white;
   }
-  
+
 </style>
 
 <template>
@@ -70,7 +70,7 @@
     },
     ready () {
       document.getElementById('domaudio').addEventListener('playing', () => {
-        console.log('playing started')
+        // console.log('playing started')
         this.isplaying = true
       })
       document.getElementById('domaudio').addEventListener('pause', () => {
@@ -79,7 +79,7 @@
       document.getElementById('domaudio').addEventListener('timeupdate', (e) => {
         this.duration = this.timeStamp(e.target.duration)
         this.currenttime = (this.timeStamp(e.target.currentTime) + ' / ' + this.duration)
-        console.log(this.currenttime)
+        // console.log(this.currenttime)
       })
     },
     methods: {
@@ -91,7 +91,7 @@
           ]
         }, (filenames) => {
           this.array = filenames
-          console.log(this.array)
+          // console.log(this.array)
           this.test()
         })
       },
@@ -110,7 +110,7 @@
 
           mm(fs.createReadStream(this.array[x]), (err, metadata) => {
             if (err) throw err
-            console.log(metadata)
+            // console.log(metadata)
 
             if (this.library.length) {
               for (let y = 0; y < this.library.length; y++) {
@@ -119,7 +119,7 @@
                 }
               }
             }
-            console.log(this.array[x])
+            // console.log(this.array[x])
             let filteredObj = {}
             if (!exists) {
               metadata.location = this.array[x]

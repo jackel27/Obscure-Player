@@ -25,20 +25,13 @@
   }
 
   .body-background {
-    // background-size: cover;
-    // width: 100%;
-    // height: 100px;
-    // position: fixed;
-    // z-index: -4;
-    // filter: blur(45px) brightness(.9);
+    background-size: cover;
     width: 100%;
     height: 100%;
     position: fixed;
+    background-repeat: repeat;
     z-index: -4;
-    -webkit-filter: blur(35px) brightness(0.9);
     filter: blur(45px) brightness(0.9);
-    background-size: 100%;
-    background-position-y: 180%;
   }
 
   .collapse-container {
@@ -127,7 +120,7 @@
   </style>
 
 <template>
-  <div class="body-background" v-bind:style="{ backgroundImage: 'url(' + artwork + ')' }">
+  <div class="body-background" id="idbody-background" v-bind:style="{ backgroundImage: 'url(' + artwork + ')', backgroundPositionY: animate + 'px'}">
 
   </div>
   <div class="columns is-gapless is-mobile">
@@ -196,7 +189,8 @@
         artwork: 'http://i.imgur.com/Ng15KqK.jpg',
         title: 'Welcome to Obscure-Player',
         artist: 'An Electron-Vue Project',
-        loadedIndex: ''
+        loadedIndex: '',
+        animate: 0
       }
     },
     vuex: {

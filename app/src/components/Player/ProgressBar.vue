@@ -39,7 +39,8 @@
       return {
         duration: '',
         currenttime: '',
-        width: ''
+        width: '',
+        parent: ''
       }
     },
     ready () {
@@ -47,7 +48,9 @@
         this.duration = e.target.duration
         this.currenttime = e.target.currentTime
         this.width = this.currenttime / this.duration * 100
-        console.log(this.width)
+
+        this.$parent.animate = ((this.currenttime / this.duration * 100).toFixed(2) * 300)
+        // console.log(this.width)
       })
     }
   }
