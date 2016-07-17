@@ -1,4 +1,4 @@
-# Obscure-Player
+# Obscure-Player ** No longer working on this project. Left unfinished. ** 
 ![](http://i.imgur.com/uTISfDP.png)
 ## Install
 
